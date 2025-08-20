@@ -12,4 +12,4 @@ hamburgerButton.addEventListener("click", function () {
 closeButton.addEventListener("click", function () {
   mobileMenu.classList.remove("flex");
 });
-alert("hello")
+
