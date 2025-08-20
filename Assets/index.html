@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="Images/Logo_Icon.png" type="image/x-icon">
+    <title>Mig Ristorante</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="./Images/Logo.png" alt="Logo Restaurant"></div>
+        <div class="desktop-menu">
+            <ul class="nav-links-desktop">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#special">Special</a></li>
+                <li><a href="#chef">Chef</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="close" id="closeButton"><i class="fa-solid fa-xmark"></i></button>
+            <ul class="nav-links-mobile">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#special">Special</a></li>
+                <li><a href="#chef">Chef</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="btns-header">
+            <div class="cart"><button class="button_cart"><img src="./Images/order icon.svg" alt="order icon"></button>
+            </div>
+            <button class="hamburger" id="hamburgerButton"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="content">
+                <h1 class="title">Meet, Eat & Enjoy the <span>True Taste</span>.</h1>
+                <p class="text">Discover the true essence of culinary delight as you meet, eat, and savor the authentic
+                    flavors that define our passion for food.</p>
+                <button class="start">Get Started</button>
+            </div>
+            <div class="hero-image"><img src="./Images/home_fetuccini.png" alt=""></div>
+        </section>
+        <section class="special" id="special">
+            <h2 class="title">Our <span>Special</span> Dish</h2>
+            <p class="text">Each dish promises an unforgettable dining experience, blending innovation with tradition to
+                delight your senses.</p>
+            <div class="card_line">
+                <div class="card">
+                    <img src="https://moraremportugal.com/wp-content/uploads/2023/08/comidas-tipicas-da-italia-foccacia-de-rosmarino-1024x574.png"
+                        alt="focaccia dish">
+                    <h3 class="name">Focaccia</h3>
+                    <p class="dish_detail">The best focaccia you ever seen, taste it.</p>
+                    <div class="stars"><img src="./Images/Testimonials Stars.png" alt="rating stars"></div>
+                    <div class="last_line">
+                        <div class="price">$14.50</div>
+                        <button class="card_cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://img.freepik.com/fotos-premium/gnocchi-de-batata-comida-italiana-tradicional-gnocchi-caseiro-jantar-saboroso-prato-mediterraneo-fundo-escuro-ilustracao-de-ia-generativa_162695-11271.jpg"
+                        alt="gnocchi dish">
+                    <h3 class="name">Gnocchi</h3>
+                    <p class="dish_detail">Light gnocchi with a delicate olive oil and fine herb sauce.</p>
+                    <div class="stars"><img src="./Images/Testimonials Stars.png" alt="rating stars"></div>
+                    <div class="last_line">
+                        <div class="price">$19.90</div>
+                        <button class="card_cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.sabornamesa.com.br/media/k2/items/cache/d30ee1ca9e879a8474cdf38bba06fa06_XL.jpg"
+                        alt="lasagna dish">
+                    <h3 class="name">Lasagna</h3>
+                    <p class="dish_detail">A fantastic lasagna with bolognese sauce.</p>
+                    <div class="stars"><img src="./Images/Testimonials Stars.png" alt="rating stars"></div>
+                    <div class="last_line">
+                        <div class="price">$25.80</div>
+                        <button class="card_cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://buenprovecho.hn/wp-content/uploads/2023/05/fettucini-con-camarones-1.jpg"
+                        alt="fettucine with shrimp">
+                    <h3 class="name">Fettucine with Shrimp</h3>
+                    <p class="dish_detail">A delicisous pasta with with sauce and shrimp.</p>
+                    <div class="stars"><img src="./Images/Testimonials Stars.png" alt="rating stars"></div>
+                    <div class="last_line">
+                        <div class="price">$21.90</div>
+                        <button class="card_cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="healthy">
+            <img src="https://thumbs.dreamstime.com/b/varios-tipos-de-pastas-68158562.jpg" alt="">
+            <div class="content">
+                <h2 class="title">We serve <span>Healthy & Taste</span> Food</h2>
+                <p class="text">Indulge guilt-free with our commitment to serving wholesome and delicious meals. Explore
+                    a
+                    menu curated to balance taste and nutrition, ensuring every bite is both satisfying and nourishing
+                </p>
+                <button class="history">Explore History</button>
+            </div>
+        </section>
+        <section class="delivery">
+            <div class="card_line_delivery">
+                <div class="card">
+                    <button class="delivery_btn"><img src="./Images/order_meal.svg" alt=""></button>
+                    <h3 class="title">Order your food</h3>
+                    <p class="text">Seamless place your food orders online with just a few clicks. Enjoy convenience and
+                        efficiency as you select from our diverse menu of delectable dishes.</p>
+                    <button class="more">Read More </button>
+                </div>
+
+                <div class="card">
+                    <button class="delivery_btn"><img src="./Images/delivery_icon.svg" alt=""></button>
+                    <h3 class="title">Pick your food</h3>
+                    <p class="text">Customize your dining experience by choosing from a tantalizing array of options.
+                        For
+                        savory, sweet, or in between craving, find the perfect meal to satisfy your appetite.</p>
+                    <button class="more">Read More </button>
+                </div>
+
+                <div class="card">
+                    <button class="delivery_btn"><img src="./Images/satisfied_icon.svg" alt=""></button>
+                    <h3 class="title">Enjoy your food</h3>
+                    <p class="text">Sit back, relax, and savor the flavor as your meticulously prepared meal arrives.
+                        Delight in the deliciousness of every bite, knowing that your satisfaction is our top priority.
+                    </p>
+                    <button class="more">Read More </button>
+                </div>
+                <img class="olive_img" src="./Images/Olive-Oil-PNG-Image.png" alt="">
+            </div>
+        </section>
+        <section class="chef" id="chef">
+            <div class="content">
+                <h2 class="title">Cooked by <span>The Best Chefs</span> in the world</h2>
+                <p class="text">Experience culinary excellence crafted by master chefs from around the globe. Our team
+                    of
+                    culinary virtuosos bring together expertise, innovation, and passion to create unforgattable dinig
+                    experiences that redefine gastronomy.</p>
+            </div>
+            <div class="images">
+                <div class="bg_circle">
+                    <img src="./Images/masterchef.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="clients" id="clients">
+            <h2 class="title">What our <span>customers</span> are saying</h2>
+            <p class="text">Discover firsthand experiences and testimonials from our valued patrons. Explore the
+                feedback
+                and reviews that showcase our commitment to quality, service, and customer satisfaction.</p>
+            <div class="card">
+                <p class="testimonial_phrase">Mig's culinary expertise never fails to impress! Every dush is a
+                    masterpiece, bursting with flavor and freshness.</p>
+                <div class="photo"><img src="https://cdn.pixabay.com/photo/2024/05/21/05/51/young-8776897_1280.jpg"
+                        alt="">
+                </div>
+                <div class="name">Antonella Fiorilli</div>
+                <div class="position">Account Manager</div>
+                <div class="balls_order">
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contacts">
+        <div class="logo"><img src="./Images/Logo.png" alt=""></div>
+        <div class="follow">Follow us:
+           <i class="fa-brands fa-square-facebook"></i>
+           <i class="fa-brands fa-square-instagram"></i>
+           <i class="fa-brands fa-square-x-twitter"></i>
+        </div>
+        <div class="contact">Contact us:
+           <i class="fa-brands fa-square-whatsapp"></i>
+           <i class="fa-solid fa-envelope"></i>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
