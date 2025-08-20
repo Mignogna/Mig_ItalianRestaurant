@@ -4,7 +4,7 @@ const closeButton = document.querySelector("#closeButton");
 const mobileMenu = document.querySelector("#mobileMenu");
 
 hamburgerButton.addEventListener("click", function () {
-    
+
     mobileMenu.classList.add("flex");
   
 });
@@ -12,3 +12,4 @@ hamburgerButton.addEventListener("click", function () {
 closeButton.addEventListener("click", function () {
   mobileMenu.classList.remove("flex");
 });
+alert("hello")
