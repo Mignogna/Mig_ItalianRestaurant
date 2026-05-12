@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Assets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="shortcut icon" href="./Assets/Images/Logo_Icon.png" type="image/x-icon">
     <title>Mig Ristorante</title>
 </head>
@@ -16,9 +16,11 @@
         <div class="desktop-menu">
             <ul class="nav-links-desktop">
                 <li><a href="#hero">Home</a></li>
-                <li><a href="#special">Special</a></li>
-                <li><a href="#chef">Chef</a></li>
-                <li><a href="#clients">Clients</a></li>
+                <li><a href="#healthy">Our History</a></li>
+                <li><a href="#special">Special Dishes</a></li>
+                <li><a href="#delivery">How It Works</a></li>
+                <li><a href="#chef"> Chefs</a></li>
+                <li><a href="#clients">Testimonials</a></li>
                 <li><a href="#contacts">Contacts</a></li>
             </ul>
         </div>
@@ -26,27 +28,41 @@
             <button class="close" id="closeButton"><i class="fa-solid fa-xmark"></i></button>
             <ul class="nav-links-mobile">
                 <li><a href="#hero">Home</a></li>
-                <li><a href="#special">Special</a></li>
-                <li><a href="#chef">Chef</a></li>
-                <li><a href="#clients">Clients</a></li>
+                <li><a href="#healthy">Our History</a></li>
+                <li><a href="#special">Special Dishes</a></li>
+                <li><a href="#delivery">How It Works</a></li>
+                <li><a href="#chef">Chefs</a></li>
+                <li><a href="#clients">Testimonials</a></li>
                 <li><a href="#contacts">Contacts</a></li>
             </ul>
         </div>
         <div class="btns-header">
-            <div class="cart"><button class="button_cart"><img src="./Assets/Images/order icon.svg" alt="order icon"></button>
+            <div class="cart"><button class="button_cart"><img src="./Assets/Images/order icon.svg"
+                        alt="order icon"></button>
             </div>
             <button class="hamburger" id="hamburgerButton"><i class="fa-solid fa-bars"></i></button>
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="content">
                 <h1 class="title">Meet, Eat & Enjoy the <span>True Taste</span>.</h1>
                 <p class="text">Discover the true essence of culinary delight as you meet, eat, and savor the authentic
                     flavors that define our passion for food.</p>
                 <button class="start">Get Started</button>
             </div>
-            <div class="hero-image"><img src="./Assets/Images/home_fetuccini.png" alt=""></div>
+            <div class="hero-image"><img src="./Assets/Images/home_fetuccini.png" alt="plate with pasta"></div>
+        </section>
+        <section class="healthy" id="healthy">
+            <img src="https://thumbs.dreamstime.com/b/varios-tipos-de-pastas-68158562.jpg" alt="">
+            <div class="content">
+                <h2 class="title">We serve <span>Healthy & Taste</span> Food</h2>
+                <p class="text">Indulge guilt-free with our commitment to serving wholesome and delicious meals. Explore
+                    a
+                    menu curated to balance taste and nutrition, ensuring every bite is both satisfying and nourishing
+                </p>
+                <button class="history">Explore History</button>
+            </div>
         </section>
         <section class="special" id="special">
             <h2 class="title">Our <span>Special</span> Dish</h2>
@@ -99,45 +115,43 @@
                 </div>
             </div>
         </section>
-        <section class="healthy">
-            <img src="https://thumbs.dreamstime.com/b/varios-tipos-de-pastas-68158562.jpg" alt="">
-            <div class="content">
-                <h2 class="title">We serve <span>Healthy & Taste</span> Food</h2>
-                <p class="text">Indulge guilt-free with our commitment to serving wholesome and delicious meals. Explore
-                    a
-                    menu curated to balance taste and nutrition, ensuring every bite is both satisfying and nourishing
+
+        <section class="delivery" id="delivery">
+            <div class="section-header">
+                <h2 class="title">Your Favorite Italian Taste, <span>Anywhere</span></h2>
+                <p class="text">
+                    Whether you're hosting a dinner at home or looking for a refined night out,
+                    we provide the perfect setting and service for every occasion.
                 </p>
-                <button class="history">Explore History</button>
             </div>
-        </section>
-        <section class="delivery">
             <div class="card_line_delivery">
-                <div class="card">
-                    <button class="delivery_btn"><img src="./Assets/Images/order_meal.svg" alt=""></button>
-                    <h3 class="title">Order your food</h3>
-                    <p class="text">Seamless place your food orders online with just a few clicks. Enjoy convenience and
-                        efficiency as you select from our diverse menu of delectable dishes.</p>
-                    <button class="more">Read More </button>
+                <div class="card-delivery">
+                    <button class="delivery_btn"><img src="./Assets/Images/order_meal.svg" alt="Order"></button>
+                    <h3 class="title">Easy Ordering</h3>
+                    <p class="text">Browse our menu and place your order in seconds. A seamless experience designed for
+                        your convenience.</p>
+                    <button class="more">Read More</button>
                 </div>
 
-                <div class="card">
-                    <button class="delivery_btn"><img src="./Assets/Images/delivery_icon.svg" alt=""></button>
-                    <h3 class="title">Pick your food</h3>
-                    <p class="text">Customize your dining experience by choosing from a tantalizing array of options.
-                        For
-                        savory, sweet, or in between craving, find the perfect meal to satisfy your appetite.</p>
-                    <button class="more">Read More </button>
+                <div class="card-delivery">
+                    <button class="delivery_btn"><img src="./Assets/Images/delivery_icon.svg" alt="Delivery"></button>
+                    <h3 class="title">Fast Delivery</h3>
+                    <p class="text">Our team ensures your meal arrives hot and fresh. We bring the authentic Ristorante
+                        taste right to your door.</p>
+                    <button class="more">Read More</button>
                 </div>
 
-                <div class="card">
-                    <button class="delivery_btn"><img src="./Assets/Images/satisfied_icon.svg" alt=""></button>
-                    <h3 class="title">Enjoy your food</h3>
-                    <p class="text">Sit back, relax, and savor the flavor as your meticulously prepared meal arrives.
-                        Delight in the deliciousness of every bite, knowing that your satisfaction is our top priority.
+                <div class="card-delivery">
+                    <button class="delivery_btn"><img src="./Assets/Images/satisfied_icon.svg" alt="Enjoy"></button>
+                    <h3 class="title">Enjoy Your Way</h3>
+                    <p class="text">
+                        Get our authentic flavors delivered to your home, <strong>or join us at our restaurant</strong>
+                        to enjoy a sophisticated atmosphere and a truly refined dining experience.
                     </p>
-                    <button class="more">Read More </button>
+                    <button class="more">Book a Table</button>
                 </div>
-                <img class="olive_img" src="./Assets/Images/Olive-Oil-PNG-Image.png" alt="">
+
+                <img class="olive_img" src="./Assets/Images/Olive-Oil-PNG-Image.png" alt="Olive oil image">
             </div>
         </section>
         <section class="chef" id="chef">
@@ -145,7 +159,7 @@
                 <h2 class="title">Cooked by <span>The Best Chefs</span> in the world</h2>
                 <p class="text">Experience culinary excellence crafted by master chefs from around the globe. Our team
                     of
-                    culinary virtuosos bring together expertise, innovation, and passion to create unforgattable dinig
+                    culinary virtuosos brings together expertise, innovation, and passion to create unforgettable dining
                     experiences that redefine gastronomy.</p>
             </div>
             <div class="images">
@@ -156,35 +170,36 @@
         </section>
         <section class="clients" id="clients">
             <h2 class="title">What our <span>customers</span> are saying</h2>
-            <p class="text">Discover firsthand experiences and testimonials from our valued patrons. Explore the
-                feedback
-                and reviews that showcase our commitment to quality, service, and customer satisfaction.</p>
-            <div class="card">
-                <p class="testimonial_phrase">Mig's culinary expertise never fails to impress! Every dush is a
-                    masterpiece, bursting with flavor and freshness.</p>
-                <div class="photo"><img src="https://cdn.pixabay.com/photo/2024/05/21/05/51/young-8776897_1280.jpg"
-                        alt="">
+            <p class="text">Discover firsthand experiences and testimonials from our valued patrons.</p>
+
+            <div class="card" id="testimonial-container">
+                <p class="testimonial_phrase" id="text-content"></p>
+                <div class="photo">
+                    <img src="" alt="Customer Photo" id="user-img">
                 </div>
-                <div class="name">Antonella Fiorilli</div>
-                <div class="position">Account Manager</div>
-                <div class="balls_order">
-                    <div class="ball"></div>
-                    <div class="ball"></div>
-                    <div class="ball"></div>
-                </div>
+                <div class="name" id="user-name"></div>
+                <div class="position" id="user-role"></div>
+            </div>
+
+            <div class="carousel-controls">
+                <button id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="balls_order" id="dots-container"></div>
+                <button id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
         </section>
     </main>
     <footer id="contacts">
         <div class="logo"><img src="./Assets/Images/Logo.png" alt=""></div>
-        <div class="follow">Follow us:
-           <i class="fa-brands fa-square-facebook"></i>
-           <i class="fa-brands fa-square-instagram"></i>
-           <i class="fa-brands fa-square-x-twitter"></i>
-        </div>
-        <div class="contact">Contact us:
-           <i class="fa-brands fa-square-whatsapp"></i>
-           <i class="fa-solid fa-envelope"></i>
+        <div class="contacts-link">
+            <div class="follow">Follow us:
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </div>
+            <div class="contact">Contact us:
+                <i class="fa-brands fa-square-whatsapp"></i>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
         </div>
     </footer>
     <script src="script.js"></script>
