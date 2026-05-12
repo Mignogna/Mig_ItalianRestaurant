@@ -24,7 +24,7 @@ header {
     padding: 0 6rem;
     border-bottom: 3px solid transparent;
     border-image: linear-gradient(to right, transparent, #d4d2d2, transparent)1;
-    height: 70px;
+    height: 4.5rem;
     width: 100%;
     z-index: 10;
     position: fixed;
@@ -44,12 +44,13 @@ header {
     justify-content: center;
     gap: 3rem;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .nav-links-desktop li {
     list-style: none;
 }
+
 .nav-links-mobile li a,
 .nav-links-desktop li a {
     color: #5d5c5c;
@@ -118,9 +119,10 @@ header {
     display: flex;
 }
 
-.btns-header{
+.btns-header {
     display: flex;
 }
+
 .button_cart {
     background-color: #de3636;
     width: 3rem;
@@ -149,10 +151,9 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    top: 0;
-    padding-top: 8rem;
+    padding-top: 4.5rem;
     width: 100%;
-    height: 46rem;
+    height: 100vh;
 }
 
 .hero .content {
@@ -206,9 +207,9 @@ header {
 
 .special {
     background-color: #ffffff;
-    padding: 2rem 6rem 8rem 6rem;
+    padding: 5rem 6rem 8rem 6rem;
     width: 100%;
-
+    height: 100vh;
 }
 
 .special .title {
@@ -242,7 +243,7 @@ header {
 }
 
 .special .card_line .card {
-    width: 18rem;
+    width: 22%;
     height: 20rem;
     box-shadow: 5px 5px 10px #9e9d9d;
     display: flex;
@@ -307,7 +308,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 42rem;
+    height: 100vh;
     background-image: url(https://thumbs.dreamstime.com/b/varios-tipos-de-pastas-133820770.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -367,32 +368,51 @@ header {
     padding: 0 6rem;
     display: flex;
     flex-direction: column;
-    height: 42rem;
+    height: 100vh;
 }
 
+.section-header {
+    margin-top: 7rem;
+}
+
+.section-header h2 {
+    color: #46772c;
+    font-size: 3rem;
+}
+
+.section-header h2 span {
+    color: #c32e2e;
+}
+
+.section-header p {
+    color: #5d5c5c;
+    font-family: "Lora", serif;
+    font-size: 1.5rem;
+    margin: 1rem 0 0 0;
+    max-width: 80vw;
+}
 
 .delivery .card_line_delivery {
-    margin-top: 6rem;
+    margin-top: 3.5rem;
     width: 100%;
-    height: 32rem;
+    height: 23rem;
     padding: 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5rem;
 }
 
-.delivery .card_line_delivery .card {
+.delivery .card_line_delivery .card-delivery {
     width: 18rem;
     height: 20rem;
     box-shadow: 5px 5px 10px #9e9d9d;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-radius: 20px;
-    padding: 1rem;
+    padding: 2rem 1rem;
     font-family: "Lora", serif;
     gap: 1.2rem;
 }
@@ -412,13 +432,13 @@ header {
     height: 1.8rem;
 }
 
-.delivery .card_line_delivery .card .title {
+.delivery .card_line_delivery .card-delivery .title {
     font-weight: 700;
     margin: 0 1rem;
     color: #de3636;
 }
 
-.delivery .card_line_delivery .card .text {
+.delivery .card_line_delivery .card-delivery .text {
     font-size: 0.9rem;
     text-align: center;
 }
@@ -432,12 +452,36 @@ header {
     color: #ffffff;
     font-weight: 500;
     cursor: pointer;
+
+}
+
+.card-delivery {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.card-delivery:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.card-delivery:nth-child(2) {
+    transition-delay: 0.5s;
+}
+
+.card-delivery:nth-child(3) {
+    transition-delay: 0.9s;
+}
+
+.card-delivery.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .olive_img {
     height: 20rem;
     width: 15rem;
-    transform: translateY(10rem);
+    transform: translateY(5rem);
 
 }
 
@@ -446,9 +490,9 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 42rem;
+    height: 100vh;
     background-color: #ffffff;
-    padding: 0 6rem;
+    padding: 5rem 6rem 0 6rem;
 }
 
 .chef .title {
@@ -488,8 +532,8 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 42rem;
-    padding: 0 6rem;
+    height: 100vh;
+    padding: 5rem 6rem;
 }
 
 .clients .title {
@@ -534,9 +578,11 @@ header {
 }
 
 .photo img {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
+    border: 2px solid #46772c;
+    box-shadow: 3px 3px 8px #9e9d9d;
 }
 
 .balls_order {
@@ -547,14 +593,37 @@ header {
 }
 
 .ball {
-    width: 1rem;
-    height: 1rem;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
     border-radius: 50%;
-    background-color: #9e9d9d;
+    transition: 0.3s;
 }
 
-.ball:nth-child(2) {
-    background-color: #de3636;
+.ball.active {
+    background-color: #46772c;
+    transform: scale(1.3);
+}
+
+.carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.carousel-controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #46772c;
+    transition: 0.3s;
+}
+
+.carousel-controls button:hover {
+    transform: scale(1.2);
 }
 
 footer {
@@ -569,6 +638,13 @@ footer {
     width: 100%;
     background-color: #f8f8f8;
     font-family: "Lora", serif;
+}
+
+footer .contacts-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
 }
 
 footer .follow,
@@ -593,12 +669,12 @@ footer i {
     }
 
     .nav-links-desktop {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
     .hero {
         padding-top: 8rem;
-        height: 40rem;
+        height: 42rem;
     }
 
     .hero .content {
@@ -628,6 +704,7 @@ footer i {
 
     .special {
         padding: 2rem;
+        height: auto;
     }
 
     .special .title {
@@ -652,6 +729,7 @@ footer i {
     .healthy {
         padding: 2rem;
         height: 100vh;
+
     }
 
     .healthy .content .title {
@@ -668,8 +746,9 @@ footer i {
 
 
     .delivery {
-        padding: 2rem;
+        padding: 1rem 2rem;
         height: 100vh;
+
     }
 
     .delivery .card_line_delivery {
@@ -679,7 +758,7 @@ footer i {
         padding: 0;
     }
 
-    .delivery .card_line_delivery .card {
+    .delivery .card_line_delivery .card-delivery {
         width: 27%;
     }
 
@@ -691,6 +770,8 @@ footer i {
     .chef {
         padding: 2rem;
         height: 100vh;
+        margin-top: 8rem;
+
     }
 
     .chef .title {
@@ -716,7 +797,7 @@ footer i {
     }
 
     .clients {
-        height: auto;
+        height: 100vh;
         padding: 2rem;
     }
 
@@ -756,12 +837,16 @@ footer i {
     }
 
     .nav-links-desktop {
-        gap: 2rem;
+        display: none;
+    }
+    .hamburger{
+        display: block;
     }
 
     .button_cart {
         width: 2.5rem;
         height: 2.5rem;
+        margin-right: 2rem;
     }
 
     .button_cart img {
@@ -819,24 +904,24 @@ footer i {
     }
 
     .special .card_line {
-        flex-direction: column;
-        gap: 1.5rem;
+      flex-wrap: wrap;
+        
     }
 
     .special .card_line .card {
-        width: 100%;
+        width: 70%;
     }
 
     .healthy {
         flex-direction: column;
-        height: auto;
-        padding: 2rem 1rem;
+        height: 100vh;
+        padding: 1rem 2rem;
         text-align: center;
     }
 
     .healthy img {
         width: 67%;
-        margin-bottom: 2rem;
+        margin-top: 1rem;
         transform: rotate(0deg);
     }
 
@@ -850,19 +935,18 @@ footer i {
     }
 
     .delivery {
-        padding: 2rem 1rem;
-        height: auto;
+        padding: 0 2rem;
+        height: 100vh;
     }
 
     .delivery .card_line_delivery {
-        flex-direction: column;
-        gap: 1.5rem;
         padding: 0;
-        margin-top: 2rem;
+        margin-top: 0.5rem;
+        justify-content: center;
     }
 
-    .delivery .card_line_delivery .card {
-        width: 100%;
+    .delivery .card_line_delivery .card-delivery {
+        width: 31%;
     }
 
     .olive_img {
@@ -871,8 +955,8 @@ footer i {
 
     .chef {
         flex-direction: column;
-        height: auto;
-        padding: 2rem 1rem;
+        height: 100vh;
+        padding: 4rem 1rem 1rem 1rem;
     }
 
     .chef .content {
@@ -902,8 +986,8 @@ footer i {
     }
 
     .clients {
-        height: auto;
-        padding: 2rem 1rem;
+        height: 100vh;
+        padding: 4rem 3rem 1rem 3rem;
     }
 
     .clients .title {
@@ -941,11 +1025,11 @@ footer i {
 
 @media (max-width: 480px) {
     body {
-        padding-top: 50px;
+        padding-top: 70px;
     }
 
     header {
-        padding: 0 1rem;
+        padding: 2rem;
         height: 50px;
     }
 
@@ -956,9 +1040,11 @@ footer i {
     .nav-links-desktop {
         display: none;
     }
-.btns-header{
-    gap: 2rem;
-}
+
+    .btns-header {
+        gap: 2rem;
+    }
+
     .hamburger {
         display: block;
     }
@@ -974,9 +1060,10 @@ footer i {
     }
 
     .hero {
+    
         flex-direction: column;
-        padding: 2rem 1rem;
-        height: auto;
+        padding: 6.25rem  2rem 1rem 2rem;
+height: auto;
     }
 
     .hero .content {
@@ -1006,6 +1093,7 @@ footer i {
 
     .hero-image img {
         width: 100%;
+      
         padding-left: 0;
     }
 
@@ -1054,8 +1142,9 @@ footer i {
     .healthy {
         flex-direction: column;
         height: auto;
-        padding: 2rem 1rem;
+        padding: 6.25rem 2rem 1rem 2rem;
         text-align: center;
+       
     }
 
     .healthy img {
@@ -1080,12 +1169,13 @@ footer i {
 
     .delivery .card_line_delivery {
         flex-direction: column;
-        gap: 1.5rem;
+      width: 100%;
+        gap: 1rem;
         padding: 0;
     }
 
-    .delivery .card_line_delivery .card {
-        width: 100%;
+    .delivery .card_line_delivery .card-delivery {
+        width: 80%;
         height: auto;
     }
 
@@ -1100,7 +1190,7 @@ footer i {
 
     .chef {
         flex-direction: column;
-        height: auto;
+        margin-top: 70px;
         padding: 2rem 1rem;
     }
 
@@ -1134,7 +1224,8 @@ footer i {
     }
 
     .clients {
-        height: auto;
+        height: 100vh;
+
         padding: 2rem 1rem;
     }
 
@@ -1173,6 +1264,9 @@ footer i {
 
     footer .logo {
         margin-bottom: 1rem;
+    }
+    footer .contacts-link{
+        width: 90%;
     }
 
     footer .follow,
